@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Usage: flask-init [command] [<args>]"
+echo
+echo "Commands:"
+echo "   help"
+echo "   project"
+echo "   --version"
+echo
+echo "GitHub: https://www.github.com/ulacioh/flask-init"

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+FLASK_INIT_ROOT="${HOME}/.flask-init"
+# Template folders
+TEMPLATE_DIR="${FLASK_INIT_ROOT}/templates"
+PROJECT_TEMPLATE_DIR="${TEMPLATE_DIR}/project_template"
+
+project_name=$1
+project_dir="${PWD}/${project_name}"
+
+
+if [[ -z $project_name ]]; then
+    echo Usage: "flask-init project <project-name>"
+else
+    if [ -d $project_name ]; then
+        echo "flask-init: \`${project_dir}' already exists"
+    else
+        mkdir $project_dir
+        cp -r ${PROJECT_TEMPLATE_DIR}/. ${project_dir}
+        echo "Project initialized in \`${project_dir}'"
+    fi
+fi
