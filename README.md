@@ -25,6 +25,11 @@ flask-init is a simple utility to initialize Flask projects structure, with one 
      $ echo 'export PATH="$HOME/.flask-init/bin:$PATH"' >> ~/.bashrc
      ~~~
 
+   - For **zsh**:
+     ~~~ zsh
+     $ echo 'export PATH="$HOME/.flask-init/bin:$PATH"' >> ~/.zshrc
+     ~~~
+
 ## License
 
 [The MIT License](LICENSE)
